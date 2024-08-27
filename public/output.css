@@ -560,6 +560,51 @@ video {
   --tw-contain-style:  ;
 }
 
+.debug-screens::before {
+  position: fixed;
+  z-index: 2147483647;
+  bottom: 0;
+  left: 0;
+  padding: .3333333em .5em;
+  font-size: 12px;
+  line-height: 1;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 0 0 1px #fff;
+  content: 'screen: _';
+}
+
+@media (min-width: 640px) {
+  .debug-screens::before {
+    content: 'screen: sm';
+  }
+}
+
+@media (min-width: 768px) {
+  .debug-screens::before {
+    content: 'screen: md';
+  }
+}
+
+@media (min-width: 1024px) {
+  .debug-screens::before {
+    content: 'screen: lg';
+  }
+}
+
+@media (min-width: 1280px) {
+  .debug-screens::before {
+    content: 'screen: xl';
+  }
+}
+
+@media (min-width: 1536px) {
+  .debug-screens::before {
+    content: 'screen: 2xl';
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -585,8 +630,8 @@ video {
   font-family: bwquintapro, sans-serif;
 }
 
-.font-bold {
-  font-weight: 700;
+.font-medium {
+  font-weight: 500;
 }
 
 .text-black {
@@ -595,20 +640,46 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
   .lg\:mb-2 {
     margin-bottom: 0.5rem;
   }
 
-  .lg\:ml-\[12\.5rem\] {
-    margin-left: 12.5rem;
+  .lg\:ml-24 {
+    margin-left: 6rem;
+  }
+
+  .lg\:inline {
+    display: inline;
+  }
+
+  .lg\:h-1 {
+    height: 0.25rem;
   }
 
   .lg\:h-56 {
     height: 14rem;
   }
 
+  .lg\:w-56 {
+    width: 14rem;
+  }
+
   .lg\:rounded {
     border-radius: 0.25rem;
+  }
+
+  .lg\:bg-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgb(216 216 216 / var(--tw-bg-opacity));
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:text-xl {
@@ -616,11 +687,68 @@ video {
     line-height: 1.75rem;
   }
 
-  .lg\:font-bold {
-    font-weight: 700;
+  .lg\:font-normal {
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mb-1 {
+    margin-bottom: 0.25rem;
   }
 
-  .lg\:font-normal {
+  .xl\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .xl\:ml-24 {
+    margin-left: 6rem;
+  }
+
+  .xl\:ml-36 {
+    margin-left: 9rem;
+  }
+
+  .xl\:ml-32 {
+    margin-left: 8rem;
+  }
+
+  .xl\:inline {
+    display: inline;
+  }
+
+  .xl\:h-1 {
+    height: 0.25rem;
+  }
+
+  .xl\:h-56 {
+    height: 14rem;
+  }
+
+  .xl\:w-56 {
+    width: 14rem;
+  }
+
+  .xl\:rounded {
+    border-radius: 0.25rem;
+  }
+
+  .xl\:bg-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgb(216 216 216 / var(--tw-bg-opacity));
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:font-normal {
     font-weight: 400;
   }
 }

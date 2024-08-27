@@ -14,5 +14,5 @@ module.exports = {
       orange: "#EE6C4D",
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-debug-screens")],
 };
