@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,25 +6,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="/public/output.css" />
   </head>
-  <body class="font-bwquintapro">
-    <main>
-      <div class="">
-        <img src="" alt="" />
+  <body
+    class="flex h-screen items-center justify-center bg-white font-bwquintapro"
+  >
+    <div>
+      <img
+        class="lg:mb-2 lg:h-56 lg:rounded"
+        src="./assets/cover-img.png"
+        alt=""
+      />
+      <div class="text-black">
+        <h1 class="font-bold lg:text-xl">mr.rager</h1>
+        <p class="lg:font-bold">Yot Club</p>
+        <p class="lg:ml-[12.5rem] lg:font-normal">2:34</p>
         <div>
-          <h1>Cooks</h1>
-          <p>Still Woozy</p>
-          <p></p>
-          <div>
-            <hr />
-          </div>
-          <div>
-            <button></button>
-            <button></button>
-            <button></button>
-          </div>
+          <hr />
+        </div>
+        <div class="flex items-center justify-center">
+          <button>
+            <img src="./assets/previous.png" alt="" />
+          </button>
+          <button>
+            <img src="./assets/play.png" alt="" />
+          </button>
+          <button>
+            <img src="./assets/next.png" alt="" />
+          </button>
         </div>
       </div>
-    </main>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
