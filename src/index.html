@@ -3,38 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Music Player</title>
     <link rel="stylesheet" href="/public/output.css" />
   </head>
   <body
-    class="debug-screens flex h-screen items-center justify-center bg-white font-bwquintapro"
+    class="debug-screens flex h-screen flex-col items-center justify-center bg-white font-bwquintapro"
   >
     <div>
-      <img
-        class="xl:mb-2 xl:h-56 xl:rounded"
-        src="./assets/cover-img.png"
-        alt=""
-      />
-      <div class="text-black">
-        <h1 class="font-medium xl:text-xl">mr.rager</h1>
-        <p class="xl:inline xl:text-base xl:font-normal">Yot Club</p>
-        <p class="xl:mb-1 xl:ml-32 xl:inline xl:font-normal">2:34</p>
-        <div class="xl:h-1 xl:w-56 xl:bg-gray">
+      <div>
+        <img src="./assets/cover-img.png" alt="cover-img" />
+        <h1>Song Title</h1>
+        <p>Artist</p>
+      </div>
+      <div>
+        <div class="">
           <div></div>
         </div>
-        <div class="flex items-center justify-center">
-          <button>
-            <img src="./assets/previous.png" alt="" />
-          </button>
-          <button>
-            <img src="./assets/play.png" alt="" />
-          </button>
-          <button>
-            <img src="./assets/next.png" alt="" />
-          </button>
-        </div>
+        <button>
+          <img src="./assets/previous.png" alt="previous" />
+        </button>
+        <button>
+          <img src="./assets/pause.png" alt="pause" />
+          <img class="hidden" src="./assets/play.png" alt="play" />
+        </button>
+        <button>
+          <img src="./assets/next.png" alt="next" />
+        </button>
       </div>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>

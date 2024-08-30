@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bwquintapro: ["bwquintapro", "sans-serif"],
+        montserrat: ["montserrat", "sans-serif"],
       },
     },
     colors: {
