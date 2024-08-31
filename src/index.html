@@ -13,31 +13,31 @@
     <link rel="stylesheet" href="/public/output.css" />
   </head>
   <body
-    class="debug-screens flex h-screen flex-col items-center justify-center bg-white font-bwquintapro"
+    class="debug-screens bg-white font-montserrat flex h-screen flex-col items-center justify-center px-5"
   >
-    <div>
-      <div>
-        <img src="./assets/cover-img.png" alt="cover-img" />
-        <h1>Song Title</h1>
-        <p>Artist</p>
-      </div>
-      <div>
-        <div class="">
+    <div class="rounded-lg bg-gray text-black">
+      <img class="rounded-md" src="./assets/cover-img.png" alt="song-cover" />
+      <h1 class="ml-6 mt-4 text-2xl font-medium">Song Title</h1>
+      <p class="mb-1 ml-6 mt-[.2rem] text-xl font-medium">Artist</p>
+      <div class="flex flex-col items-center justify-center">
+        <div class="mt-5 h-[.3rem] w-[88%] bg-dark-gray">
           <div></div>
         </div>
-        <button>
-          <img src="./assets/previous.png" alt="previous" />
-        </button>
-        <button>
-          <img src="./assets/pause.png" alt="pause" />
-          <img class="hidden" src="./assets/play.png" alt="play" />
-        </button>
-        <button>
-          <img src="./assets/next.png" alt="next" />
-        </button>
+        <audio src=""></audio>
+        <div class="mb-6 mt-7 flex items-center justify-center">
+          <button class="mr-10">
+            <img class="w-5" src="./assets/previous.png" alt="previous" />
+          </button>
+          <button class="mr-10">
+            <img class="w-7" src="./assets/pause.png" alt="pause" />
+            <img class="hidden" src="./assets/play.png" alt="play" />
+          </button>
+          <button>
+            <img class="w-5" src="./assets/next.png" alt="next" />
+          </button>
+        </div>
       </div>
     </div>
-
     <script src="main.js"></script>
   </body>
 </html>

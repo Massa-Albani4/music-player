@@ -2,17 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      fontFamily: {
-        montserrat: ["montserrat", "sans-serif"],
-      },
-    },
+    extend: {},
     colors: {
-      white: "#F8F8FF",
-      black: "#313638",
-      gray: "#D8D8D8",
       orange: "#EE6C4D",
+      black: "#313638",
+      gray: "#D9D9D9",
+      "dark-gray": "#858585",
+    },
+    fontFamily: {
+      Montserrat: ["Montserrat", "sans-serif"],
     },
   },
-  plugins: [require("tailwindcss-debug-screens")],
+  plugins: [],
 };
