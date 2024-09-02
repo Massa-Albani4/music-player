@@ -16,39 +16,47 @@
     class="debug-screens font-montserrat flex h-screen flex-col items-center justify-center bg-white px-6"
   >
     <div
-      class="w-full rounded-lg bg-gray text-black xl:w-[34%] xl:px-[1.38rem] xl:pt-5"
+      class="w-full rounded-lg bg-gray text-black xl:w-[30%] xl:px-[1.38rem] xl:pt-5"
     >
       <div class="xl:flex xl:flex-row">
         <div
-          class="h-[24rem] w-full rounded-md bg-cover bg-center xl:h-28 xl:w-[40%]"
+          class="h-[24rem] w-full rounded-md bg-cover bg-center xl:mb-1 xl:h-24 xl:w-[40%]"
           style="background-image: url(&quot;./assets/cover-img.png&quot;)"
         ></div>
         <div>
-          <h1 class="ml-6 mt-4 text-2xl xl:text-xl font-medium xl:-mt-[.15rem] xl:ml-[1.2rem]">
+          <h1
+            class="ml-6 mt-4 text-2xl font-medium xl:-mt-[.15rem] xl:ml-[1.2rem] xl:text-xl"
+          >
             Song Title
           </h1>
           <p
-            class="mb-1 ml-6 xl:text-lg mt-[.15rem] text-xl font-medium xl:ml-[1.2rem] xl:mt-[.07rem]"
+            class="mb-1 ml-6 mt-[.1rem] text-xl font-medium xl:-mt-[.08rem] xl:ml-[1.2rem] xl:text-base"
           >
             Artist
           </p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-center">
-        <div class="mt-5 h-[.3rem] w-[100%] bg-dark-gray">
+        <div
+          class="mt-5 h-[.3rem] w-[88%] rounded-md bg-dark-gray xl:h-[.26rem] xl:w-full"
+        >
           <div></div>
         </div>
         <audio src=""></audio>
-        <div class="mb-6 mt-7 flex items-center justify-center">
-          <button class="mr-10">
-            <img class="w-5" src="./assets/previous.png" alt="previous" />
+        <div class="mb-6 mt-7 flex items-center justify-center xl:mb-5">
+          <button class="mr-10 xl:mr-9">
+            <img
+              class="w-5 xl:w-4"
+              src="./assets/previous.png"
+              alt="previous"
+            />
           </button>
-          <button class="mr-10">
-            <img class="w-7" src="./assets/pause.png" alt="pause" />
+          <button class="mr-10 xl:mr-9">
+            <img class="w-7 xl:w-6" src="./assets/pause.png" alt="pause" />
             <img class="hidden" src="./assets/play.png" alt="play" />
           </button>
           <button>
-            <img class="w-5" src="./assets/next.png" alt="next" />
+            <img class="w-5 xl:w-4" src="./assets/next.png" alt="next" />
           </button>
         </div>
       </div>
