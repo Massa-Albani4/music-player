@@ -13,14 +13,29 @@
     <link rel="stylesheet" href="/public/output.css" />
   </head>
   <body
-    class="debug-screens bg-white font-montserrat flex h-screen flex-col items-center justify-center px-5"
+    class="debug-screens font-montserrat flex h-screen flex-col items-center justify-center bg-white px-6"
   >
-    <div class="rounded-lg bg-gray text-black">
-      <img class="rounded-md" src="./assets/cover-img.png" alt="song-cover" />
-      <h1 class="ml-6 mt-4 text-2xl font-medium">Song Title</h1>
-      <p class="mb-1 ml-6 mt-[.2rem] text-xl font-medium">Artist</p>
+    <div
+      class="w-full rounded-lg bg-gray text-black xl:w-[34%] xl:px-[1.38rem] xl:pt-5"
+    >
+      <div class="xl:flex xl:flex-row">
+        <div
+          class="h-[24rem] w-full rounded-md bg-cover bg-center xl:h-28 xl:w-[40%]"
+          style="background-image: url(&quot;./assets/cover-img.png&quot;)"
+        ></div>
+        <div>
+          <h1 class="ml-6 mt-4 text-2xl xl:text-xl font-medium xl:-mt-[.15rem] xl:ml-[1.2rem]">
+            Song Title
+          </h1>
+          <p
+            class="mb-1 ml-6 xl:text-lg mt-[.15rem] text-xl font-medium xl:ml-[1.2rem] xl:mt-[.07rem]"
+          >
+            Artist
+          </p>
+        </div>
+      </div>
       <div class="flex flex-col items-center justify-center">
-        <div class="mt-5 h-[.3rem] w-[88%] bg-dark-gray">
+        <div class="mt-5 h-[.3rem] w-[100%] bg-dark-gray">
           <div></div>
         </div>
         <audio src=""></audio>

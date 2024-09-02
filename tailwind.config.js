@@ -8,6 +8,7 @@ module.exports = {
       black: "#313638",
       gray: "#D9D9D9",
       "dark-gray": "#858585",
+      white: "#F8F8FF",
     },
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
