@@ -16,7 +16,7 @@
     class="debug-screens font-montserrat flex h-screen flex-col items-center justify-center bg-white px-6"
   >
     <div
-      class="w-full rounded-lg bg-gray text-black xl:w-[30%] xl:px-[1.38rem] xl:pt-5"
+      class="w-full rounded-lg bg-gray text-black xl:w-[30%] xl:px-[1.38rem] xl:pt-5" id="music-container"
     >
       <div class="xl:flex xl:flex-row">
         <div
@@ -38,28 +38,29 @@
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          class="mt-5 h-[.3rem] w-[88%] rounded-md bg-dark-gray xl:h-[.26rem] xl:w-full"
+          class="mt-5 h-[.3rem] w-[88%] cursor-pointer rounded-md bg-dark-gray xl:h-[.26rem] xl:w-full"
         >
-          <div></div>
+          <div class="h-full w-2/12 rounded-md bg-orange xl:ease-linear xl:duration-[0.1s] xl:transition-[width]">
+
+          </div>
         </div>
-        <audio src=""></audio>
+          <audio src=""></audio>
         <div class="mb-6 mt-7 flex items-center justify-center xl:mb-5">
-          <button class="mr-10 xl:mr-9">
+          <button class="mr-10 xl:mr-9" id="prev-btn">
             <img
               class="w-5 xl:w-4"
               src="./assets/previous.png"
               alt="previous"
             />
           </button>
-          <button class="mr-10 xl:mr-9">
-            <img class="w-7 xl:w-6" src="./assets/pause.png" alt="pause" />
-            <img class="hidden" src="./assets/play.png" alt="play" />
+          <button class="mr-10 xl:mr-9" id="play-btn">
+            <img class="w-7 xl:w-6 hidden" src="./assets/pause.png" alt="pause" />
+            <img class="" src="./assets/play.png" alt="play" />
           </button>
           <button>
             <img class="w-5 xl:w-4" src="./assets/next.png" alt="next" />
           </button>
         </div>
-      </div>
     </div>
     <script src="main.js"></script>
   </body>

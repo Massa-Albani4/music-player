@@ -608,8 +608,16 @@ video {
   height: 24rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
 }
 
 .w-5 {
@@ -626,6 +634,15 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -648,24 +665,24 @@ video {
   border-radius: 0.375rem;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 54 56 / var(--tw-bg-opacity));
-}
-
 .bg-dark-gray {
   --tw-bg-opacity: 1;
-  background-color: rgb(133 133 133 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 248 255 / var(--tw-bg-opacity));
+  background-color: rgb(154 154 154 / var(--tw-bg-opacity));
 }
 
 .bg-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 108 77 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 255 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -700,7 +717,53 @@ video {
   color: rgb(49 54 56 / var(--tw-text-opacity));
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-\[\] {
+  transition-property: ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-\[w\] {
+  transition-property: w;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-\[width\] {
+  transition-property: width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-\[\] {
+  transition-duration: ;
+}
+
+.duration-\[0\.\] {
+  transition-duration: 0.;
+}
+
+.duration-\[0\.1s\] {
+  transition-duration: 0.1s;
+}
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
 @media (min-width: 1280px) {
+  .xl\:-mt-\[\.08rem\] {
+    margin-top: -.08rem;
+  }
+
   .xl\:-mt-\[\.15rem\] {
     margin-top: -.15rem;
   }
@@ -709,60 +772,12 @@ video {
     margin-bottom: 0.25rem;
   }
 
-  .xl\:ml-\[1\.2rem\] {
-    margin-left: 1.2rem;
-  }
-
-  .xl\:-mt-1 {
-    margin-top: -0.25rem;
-  }
-
-  .xl\:-mt-\[\.1\] {
-    margin-top: -.1;
-  }
-
-  .xl\:-mt-\[\.18re\] {
-    margin-top: -.18re;
-  }
-
-  .xl\:-mt-\[\.18rem\] {
-    margin-top: -.18rem;
-  }
-
-  .xl\:-mt-\[\.1rem\] {
-    margin-top: -.1rem;
-  }
-
-  .xl\:-mt-\[\.05rem\] {
-    margin-top: -.05rem;
-  }
-
-  .xl\:-mt-\[\.0rem\] {
-    margin-top: -.0rem;
-  }
-
-  .xl\:-mt-\[\.09rem\] {
-    margin-top: -.09rem;
-  }
-
-  .xl\:-mt-\[\.08rem\] {
-    margin-top: -.08rem;
-  }
-
-  .xl\:mr-7 {
-    margin-right: 1.75rem;
-  }
-
-  .xl\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .xl\:mr-8 {
-    margin-right: 2rem;
-  }
-
   .xl\:mb-5 {
     margin-bottom: 1.25rem;
+  }
+
+  .xl\:ml-\[1\.2rem\] {
+    margin-left: 1.2rem;
   }
 
   .xl\:mr-9 {
@@ -781,6 +796,14 @@ video {
     height: .26rem;
   }
 
+  .xl\:w-4 {
+    width: 1rem;
+  }
+
+  .xl\:w-6 {
+    width: 1.5rem;
+  }
+
   .xl\:w-\[30\%\] {
     width: 30%;
   }
@@ -791,22 +814,6 @@ video {
 
   .xl\:w-full {
     width: 100%;
-  }
-
-  .xl\:w-3 {
-    width: 0.75rem;
-  }
-
-  .xl\:w-4 {
-    width: 1rem;
-  }
-
-  .xl\:w-5 {
-    width: 1.25rem;
-  }
-
-  .xl\:w-6 {
-    width: 1.5rem;
   }
 
   .xl\:flex-row {
@@ -830,5 +837,19 @@ video {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:transition-\[width\] {
+    transition-property: width;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .xl\:duration-\[0\.1s\] {
+    transition-duration: 0.1s;
+  }
+
+  .xl\:ease-linear {
+    transition-timing-function: linear;
   }
 }

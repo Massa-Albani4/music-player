@@ -2,12 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
     colors: {
       orange: "#EE6C4D",
       black: "#313638",
       gray: "#D9D9D9",
-      "dark-gray": "#858585",
+      "dark-gray": "#9A9A9A",
       white: "#F8F8FF",
     },
     fontFamily: {
