@@ -697,10 +697,6 @@ video {
   justify-content: center;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -723,11 +719,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(248 248 255 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 54 56 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -763,12 +754,24 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:-mt-\[\.08rem\] {
-    margin-top: -.08rem;
+  .xl\:relative {
+    position: relative;
   }
 
-  .xl\:-mt-\[\.15rem\] {
-    margin-top: -.15rem;
+  .xl\:-top-96 {
+    top: -24rem;
+  }
+
+  .xl\:-top-6 {
+    top: -1.5rem;
+  }
+
+  .xl\:-top-1 {
+    top: -0.25rem;
+  }
+
+  .xl\:-top-2 {
+    top: -0.5rem;
   }
 
   .xl\:mb-1 {
@@ -783,6 +786,10 @@ video {
     margin-left: 1rem;
   }
 
+  .xl\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
   .xl\:ml-\[1rem\] {
     margin-left: 1rem;
   }
@@ -791,20 +798,12 @@ video {
     margin-right: 2.25rem;
   }
 
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
   .xl\:mt-6 {
     margin-top: 1.5rem;
-  }
-
-  .xl\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .xl\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .xl\:mb-6 {
-    margin-bottom: 1.5rem;
   }
 
   .xl\:flex {
@@ -823,44 +822,16 @@ video {
     width: 1rem;
   }
 
-  .xl\:w-6 {
-    width: 1.5rem;
+  .xl\:w-\[1\.3rem\] {
+    width: 1.3rem;
   }
 
   .xl\:w-\[33\%\] {
     width: 33%;
   }
 
-  .xl\:w-\[40\%\] {
-    width: 40%;
-  }
-
-  .xl\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .xl\:w-\[8\%\] {
-    width: 8%;
-  }
-
-  .xl\:w-\[83\%\] {
-    width: 83%;
-  }
-
-  .xl\:w-\[84\%\] {
-    width: 84%;
-  }
-
-  .xl\:w-5 {
-    width: 1.25rem;
-  }
-
   .xl\:w-\[38\%\] {
     width: 38%;
-  }
-
-  .xl\:w-\[37\%\] {
-    width: 37%;
   }
 
   .xl\:flex-row {
@@ -879,27 +850,6 @@ video {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .xl\:text-\[1\.4rem\] {
-    font-size: 1.4rem;
-  }
-
-  .xl\:text-\[1\.32rem\] {
-    font-size: 1.32rem;
-  }
-
-  .xl\:text-\[1\.3rem\] {
-    font-size: 1.3rem;
-  }
-
-  .xl\:text-\[1\.rem\] {
-    color: 1.rem;
   }
 
   .xl\:transition-\[width\] {
