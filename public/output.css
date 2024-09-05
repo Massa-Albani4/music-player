@@ -681,6 +681,10 @@ video {
   width: 100%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -758,20 +762,8 @@ video {
     position: relative;
   }
 
-  .xl\:-top-96 {
-    top: -24rem;
-  }
-
-  .xl\:-top-6 {
-    top: -1.5rem;
-  }
-
   .xl\:-top-1 {
     top: -0.25rem;
-  }
-
-  .xl\:-top-2 {
-    top: -0.5rem;
   }
 
   .xl\:mb-1 {

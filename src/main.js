@@ -12,7 +12,7 @@ const pauseIcon = document.getElementById("pause-icon");
 const playIcon = document.getElementById("play-icon");
 
 const songs = ["Talisman", "Point and Kill", "Plantasia"];
-const Artists = ["AIR", "speed", "Mort Garson"];
+const Artists = ["AIR", "Little Simz", "Mort Garson"];
 const covers = [
   "url(./assets/Talisman.jpg)",
   "url(./assets/speed.jpg)",
