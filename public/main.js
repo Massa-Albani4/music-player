@@ -14,9 +14,9 @@ const playIcon = document.getElementById("play-icon");
 const songs = ["Talisman", "Point and Kill", "Plantasia"];
 const Artists = ["AIR", "Little Simz", "Mort Garson"];
 const covers = [
-  "url(/src/assets/Talisman.jpg)",
-  "url(/src/assets/speed.jpg)",
-  "url(/src/assets/Plantasia.jpg)",
+  "url(../src/assets/Talisman.jpg)",
+  "url(../src/assets/speed.jpg)",
+  "url(../src/assets/Plantasia.jpg)",
 ];
 let isPlaying = false;
 
@@ -30,7 +30,7 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   Title.innerText = song;
   Artist.innerText = Artists[artistIndex];
-  audio.src = `/src/music/${song}.mp3`;
+  audio.src = `../src/music/${song}.mp3`;
   cover.style.backgroundImage = covers[songIndex];
 }
 
