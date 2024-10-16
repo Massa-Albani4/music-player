@@ -3,19 +3,17 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
-    },
-    colors: {
-      orange: "#EE6C4D",
-      black: "#313638",
-      gray: "#D9D9D9",
-      "dark-gray": "#9A9A9A",
-      white: "#F8F8FF",
+      colors: {
+        orange: "#E9873C",
+        gray: "#D9D9D9",
+        black: "#1B1B1B",
+        "dark-gray": "#9A9A9A",
+        white: "#F8F8FF",
+      },
     },
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
     },
   },
-  plugins: [
-    require('tailwindcss-debug-screens'),
-  ],
+  plugins: [require("tailwindcss-debug-screens")],
 };
