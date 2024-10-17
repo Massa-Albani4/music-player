@@ -11,11 +11,11 @@ const Artist = document.getElementById("Artist");
 const pauseIcon = document.getElementById("pause-icon");
 const playIcon = document.getElementById("play-icon");
 
-const songs = ["Talisman", "Point and Kill", "Plantasia"];
+const songs = ["Talisman", "Venom", "Plantasia"];
 const Artists = ["AIR", "Little Simz", "Mort Garson"];
 const covers = [
   "url(../src/assets/Talisman.jpg)",
-  "url(../src/assets/speed.jpg)",
+  "url(../src/assets/Venom.jpg)",
   "url(../src/assets/Plantasia.jpg)",
 ];
 let isPlaying = false;
