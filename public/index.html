@@ -16,95 +16,175 @@
     class="font-montserrat debug-screens flex h-screen flex-col bg-[#292F36] items-center justify-center px-6"
   >
     <div
-      class="w-full rounded-md bg-[#F1FFC4] text-black xl:w-[33%] xl:pt-4" id="music-container"
+      class="w-full rounded-md bg-[#F1FFC4] text-black xl:w-[33%] xl:pt-4"
+      id="music-container"
     >
       <div class="xl:flex xl:flex-row">
         <div
-          class="h-[24rem] xl:ml-5 w-full rounded-[2.5rem] bg-cover bg-center xl:mb-1 xl:h-20 xl:w-[19%]"
-          style="background-image: url(&quot;../src/assets/Talisman.jpg&quot;)" id="song-cover"
+          class="h-80 rounded-t-md xl:ml-5 xl:border-2 xl:border-black w-full xl:rounded-[2.5rem] bg-cover bg-center xl:mb-1 xl:h-20 xl:w-[19%]"
+          style="background-image: url(&quot;../src/assets/Talisman.jpg&quot;)"
+          id="song-cover"
         ></div>
         <div>
           <h1
-            class="ml-6 mt-4 xl:mt-0 text-xl font-medium xl:ml-[1rem] xl:text-xl" id="song-title"
-          >
-          </h1>
+            class="ml-6 mt-2 xl:mt-0 text-lg p-0 font-medium xl:ml-[1rem] xl:text-xl"
+            id="song-title"
+          ></h1>
           <p
-            class="mb-1 xl:relative xl:-top-1 ml-6 xl:mt-0 text-base font-medium xl:ml-4 xl:text-base" id="Artist"
-          >
-          </p>
+            class="text-sm font-medium xl:relative xl:-top-1 ml-6 xl:mt-0 xl:ml-4 xl:text-base"
+            id="Artist"
+          ></p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          class="mt-4 h-[.3rem] w-[88%] cursor-pointer rounded-md bg-black xl:h-[.26rem] xl:w-[84
-          %]" id="progress-container"
+          class="mt-4 h-[.3rem] w-[88%] cursor-pointer rounded-md bg-black xl:h-[.27rem] xl:w-[84 %]"
+          id="progress-container"
         >
-          <div class="h-full w-0 rounded-md bg-orange xl:ease-linear xl:duration-[0.1s] xl:transition-[width]" id="progress-bar">
-          </div>
+          <div
+            class="flex justify-end items-center h-full w-[4.3%] rounded-md bg-orange xl:ease-linear xl:duration-[0.1s] xl:transition-[width]"
+            id="progress-bar"
+          ></div>
         </div>
         <audio src="" id="audio"></audio>
-        <div class="mb-6 mt-7 xl:mt-5 flex items-center justify-center xl:mb-5">
-          <button class="mr-10 xl:mr-8" id="prev-btn">
-            <div class="w-7 h-7 xl:w-5 xl:h-4">
-              <svg viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="mb-4 mt-4 flex items-center justify-center xl:mb-5 xl:mt-5">
+          <button class="mr-8 xl:mr-8" id="prev-btn">
+            <div class="w-5 h-4 xl:w-5 xl:h-4">
+              <svg
+                viewBox="0 0 15 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g clip-path="url(#clip0_142_10)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C1.55 0 2 0.45 2 1V11C2 11.55 1.55 12 1 12C0.45 12 0 11.55 0 11V1C0 0.45 0.45 0 1 0ZM4.66 6.82L10.43 10.89C11.09 11.36 12.01 10.88 12.01 10.07V1.93C12.01 1.12 11.1 0.65 10.43 1.11L4.66 5.18C4.09 5.58 4.09 6.42 4.66 6.82Z" fill="#1B1B1B"/>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1 0C1.55 0 2 0.45 2 1V11C2 11.55 1.55 12 1 12C0.45 12 0 11.55 0 11V1C0 0.45 0.45 0 1 0ZM4.66 6.82L10.43 10.89C11.09 11.36 12.01 10.88 12.01 10.07V1.93C12.01 1.12 11.1 0.65 10.43 1.11L4.66 5.18C4.09 5.58 4.09 6.42 4.66 6.82Z"
+                    fill="#1B1B1B"
+                  />
                 </g>
                 <defs>
-                <clipPath id="clip0_142_10">
-                <rect width="13" height="12" fill="white"/>
-                </clipPath>
+                  <clipPath id="clip0_142_10">
+                    <rect width="13" height="12" fill="white" />
+                  </clipPath>
                 </defs>
               </svg>
             </div>
           </button>
-          <button class="mr-10 xl:mr-8" id="play-btn">
-            <div class="w-7 h-7 xl:w-5 xl:h-5" id="play-icon">
-              <svg viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <button
+            class="mr-8 mb-2 xl:mb-0 xl:mt-[.11rem] xl:mr-8"
+            id="play-btn"
+          >
+            <div class="w-5 h-4 xl:w-5 xl:h-6" id="play-icon">
+              <svg
+                viewBox="0 0 12 13"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
                 <title>play_arrow</title>
                 <desc>play button icon</desc>
-                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Rounded" transform="translate(-753.000000, -955.000000)">
-                        <g id="AV" transform="translate(100.000000, 852.000000)">
-                            <g id="-Round-/-AV-/-play_arrow" transform="translate(646.000000, 98.000000)">
-                                <g>
-                                    <rect id="Rectangle-Copy-50" x="0" y="0" width="24" height="24"></rect>
-                                    <path d="M7,6.82 L7,17.18 C7,17.97 7.87,18.45 8.54,18.02 L16.68,12.84 C17.3,12.45 17.3,11.55 16.68,11.15 L8.54,5.98 C7.87,5.55 7,6.03 7,6.82 Z" id="🔹Icon-Color" fill="#1D1D1D"></path>
-                                </g>
-                            </g>
+                <g
+                  id="Icons"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Rounded"
+                    transform="translate(-753.000000, -955.000000)"
+                  >
+                    <g id="AV" transform="translate(100.000000, 852.000000)">
+                      <g
+                        id="-Round-/-AV-/-play_arrow"
+                        transform="translate(646.000000, 98.000000)"
+                      >
+                        <g>
+                          <rect
+                            id="Rectangle-Copy-50"
+                            x="0"
+                            y="0"
+                            width="24"
+                            height="24"
+                          ></rect>
+                          <path
+                            d="M7,6.82 L7,17.18 C7,17.97 7.87,18.45 8.54,18.02 L16.68,12.84 C17.3,12.45 17.3,11.55 16.68,11.15 L8.54,5.98 C7.87,5.55 7,6.03 7,6.82 Z"
+                            id="🔹Icon-Color"
+                            fill="#1D1D1D"
+                          ></path>
                         </g>
+                      </g>
                     </g>
+                  </g>
                 </g>
               </svg>
             </div>
-            <div class="w-7 h-7 xl:w-5 xl:h-5 hidden" id="pause-icon">
-              <svg viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.448 0 0 0.448 0 1V7C0 7.552 0.448 8 1 8C1.552 8 2 7.552 2 7V1C2 0.448 1.552 0 1 0ZM6 1V7C6 7.552 5.552 8 5 8C4.448 8 4 7.552 4 7V1C4 0.448 4.448 0 5 0C5.552 0 6 0.448 6 1Z" fill="#1B1B1B"/>
-              </svg>                
+            <div class="w-5 h-4 xl:w-5 xl:h-6 hidden" id="pause-icon">
+              <svg
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 0C0.448 0 0 0.448 0 1V7C0 7.552 0.448 8 1 8C1.552 8 2 7.552 2 7V1C2 0.448 1.552 0 1 0ZM6 1V7C6 7.552 5.552 8 5 8C4.448 8 4 7.552 4 7V1C4 0.448 4.448 0 5 0C5.552 0 6 0.448 6 1Z"
+                  fill="#1B1B1B"
+                />
+              </svg>
             </div>
           </button>
           <button id="next-btn">
-            <div class="w-7 h-7 xl:w-5 xl:h-4">
-              <svg viewBox="0 0 15 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="w-5 h-4 xl:w-5 xl:h-4">
+              <svg
+                viewBox="0 0 15 14"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
                 <title>skip_next</title>
                 <desc>next button icon</desc>
-                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Rounded" transform="translate(-548.000000, -1000.000000)">
-                        <g id="AV" transform="translate(100.000000, 852.000000)">
-                            <g id="-Round-/-AV-/-skip_next" transform="translate(442.000000, 142.000000)">
-                                <g>
-                                    <rect id="Rectangle-Copy-52" x="0" y="0" width="24" height="24"></rect>
-                                    <path d="M7.58,16.89 L13.35,12.82 C13.91,12.42 13.91,11.58 13.35,11.19 L7.58,7.11 C6.91,6.65 6,7.12 6,7.93 L6,16.07 C6,16.88 6.91,17.35 7.58,16.89 Z M16,7 L16,17 C16,17.55 16.45,18 17,18 C17.55,18 18,17.55 18,17 L18,7 C18,6.45 17.55,6 17,6 C16.45,6 16,6.45 16,7 Z" id="🔹Icon-Color" fill="#1b1b1b"></path>
-                                </g>
-                            </g>
+                <g
+                  id="Icons"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Rounded"
+                    transform="translate(-548.000000, -1000.000000)"
+                  >
+                    <g id="AV" transform="translate(100.000000, 852.000000)">
+                      <g
+                        id="-Round-/-AV-/-skip_next"
+                        transform="translate(442.000000, 142.000000)"
+                      >
+                        <g>
+                          <rect
+                            id="Rectangle-Copy-52"
+                            x="0"
+                            y="0"
+                            width="24"
+                            height="24"
+                          ></rect>
+                          <path
+                            d="M7.58,16.89 L13.35,12.82 C13.91,12.42 13.91,11.58 13.35,11.19 L7.58,7.11 C6.91,6.65 6,7.12 6,7.93 L6,16.07 C6,16.88 6.91,17.35 7.58,16.89 Z M16,7 L16,17 C16,17.55 16.45,18 17,18 C17.55,18 18,17.55 18,17 L18,7 C18,6.45 17.55,6 17,6 C16.45,6 16,6.45 16,7 Z"
+                            id="🔹Icon-Color"
+                            fill="#1b1b1b"
+                          ></path>
                         </g>
+                      </g>
                     </g>
+                  </g>
                 </g>
-            </svg>
+              </svg>
             </div>
           </button>
         </div>
       </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

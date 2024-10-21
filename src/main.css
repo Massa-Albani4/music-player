@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "bwquintapro";
-    src: url("/public/font/BwQuintaPro-Medium.woff2");
-  }
+.progressBar {
+  -webkit-appearance: none;
+}
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #E9873C;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
