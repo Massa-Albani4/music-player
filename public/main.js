@@ -3,7 +3,7 @@ const playBtn = document.getElementById("play-btn");
 const previousBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 const audio = document.getElementById("audio");
-const progress = document.getElementById("progress-bar");
+const progressBar = document.getElementById("progress-bar");
 const progressContainer = document.getElementById("progress-container");
 const Title = document.getElementById("song-title");
 const cover = document.getElementById("song-cover");
@@ -11,7 +11,7 @@ const Artist = document.getElementById("Artist");
 const pauseIcon = document.getElementById("pause-icon");
 const playIcon = document.getElementById("play-icon");
 
-const songs = ["spongebob closing theme", "spongebob remix", "vivaldi remix"];
+const songs = ["spongebob closing theme", "grass skirt chase", "winter remix"];
 const Artists = ["Steve Belfer", "Sage Guyton", "Vivaldi"];
 const covers = [
   "url(../src/assets/spongebob.jpg)",
@@ -85,7 +85,7 @@ function nextSong() {
 function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
   const progressPercent = (currentTime / duration) * 100;
-  progress.style.width = `${progressPercent}%`;
+  progressBar.style.width = `${progressPercent}%`;
 }
 
 function setProgress(e) {
