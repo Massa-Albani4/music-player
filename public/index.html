@@ -31,7 +31,7 @@
             id="song-title"
           ></h1>
           <p
-            class="text-sm font-medium xl:relative xl:-top-1 ml-6 xl:mt-0 xl:ml-4 xl:text-base"
+            class="text-sm font-medium xl:relative xl:-top-1 ml-6 xl:mt-1 xl:ml-4 xl:text-base"
             id="Artist"
           ></p>
         </div>
@@ -47,7 +47,7 @@
           ></div>
         </div>
         <audio src="" id="audio"></audio>
-        <div class="mb-4 mt-4 flex items-center justify-center xl:mb-5 xl:mt-5">
+        <div class="mb-4 mt-4 flex items-center justify-center xl:mb-4 xl:mt-5">
           <button class="mr-8 xl:mr-8" id="prev-btn">
             <div class="w-5 h-4 xl:w-5 xl:h-4">
               <svg
@@ -75,9 +75,9 @@
             class="mr-8 mb-2 xl:mb-0 xl:mt-[.11rem] xl:mr-8"
             id="play-btn"
           >
-            <div class="w-5 h-4 xl:w-5 xl:h-6" id="play-icon">
+            <div class="w-5 h-4 xl:w-5 xl:h-6 xl:mt-[.13rem]" id="play-icon">
               <svg
-                viewBox="0 0 12 13"
+                viewBox="0 0.8 12 13"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -120,7 +120,10 @@
                 </g>
               </svg>
             </div>
-            <div class="w-5 h-4 xl:w-5 xl:h-6 hidden" id="pause-icon">
+            <div
+              class="w-5 h-4 xl:w-5 xl:h-6 xl:mt-[.13rem] hidden"
+              id="pause-icon"
+            >
               <svg
                 viewBox="0 0 7 8"
                 fill="none"

@@ -11,12 +11,12 @@ const Artist = document.getElementById("Artist");
 const pauseIcon = document.getElementById("pause-icon");
 const playIcon = document.getElementById("play-icon");
 
-const songs = ["Talisman", "Venom", "Plantasia"];
-const Artists = ["AIR", "Little Simz", "Mort Garson"];
+const songs = ["spongebob closing theme", "spongebob remix", "vivaldi remix"];
+const Artists = ["Steve Belfer", "Sage Guyton", "Vivaldi"];
 const covers = [
-  "url(../src/assets/Talisman.jpg)",
-  "url(../src/assets/Venom.jpg)",
-  "url(../src/assets/Plantasia.jpg)",
+  "url(../src/assets/spongebob.jpg)",
+  "url(../src/assets/remix.jpg)",
+  "url(../src/assets/vivaldi.jpg)",
 ];
 let isPlaying = false;
 
