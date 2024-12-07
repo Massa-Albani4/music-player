@@ -16,22 +16,22 @@
     class="font-montserrat debug-screens flex h-screen flex-col bg-[#292F36] items-center justify-center px-6"
   >
     <div
-      class="w-full rounded-md bg-[#F1FFC4] text-black xl:w-[33%] xl:pt-4"
+      class="w-full rounded-md bg-[#F1FFC4] text-black lg:w-[40%] xl:w-[33%] xl:pt-4 md:pt-4"
       id="music-container"
     >
-      <div class="xl:flex xl:flex-row">
+      <div class="xl:flex xl:flex-row lg:flex lg:flex-row">
         <div
-          class="h-80 rounded-t-md xl:ml-5 xl:border-2 xl:border-black w-full xl:rounded-[2.5rem] bg-cover bg-center xl:mb-1 xl:h-16 xl:w-[15%]"
+          class="h-80 rounded-t-md md:h-14 md:w-[3.7rem] md:rounded-[2.5rem] md:ml-5 xl:ml-5 md:border-2 md:border-black xl:border-2 xl:border-black w-full xl:rounded-[2.5rem] bg-cover bg-center xl:mb-2 md:mb-[.4rem] xl:h-16 xl:w-[15%]"
           style="background-image: url(&quot;../src/assets/Talisman.jpg&quot;)"
           id="song-cover"
         ></div>
         <div>
           <h1
-            class="ml-6 mt-2 xl:mt-0 text-lg p-0 font-medium xl:ml-[1rem] xl:text-xl"
+            class="ml-6 mt-2 md:mt-0 md:ml-4 xl:mt-0 text-lg p-0 font-medium xl:ml-[1rem] xl:text-xl"
             id="song-title"
           ></h1>
           <p
-            class="text-sm font-medium xl:relative xl:-top-1 ml-6 xl:mt-1 xl:ml-4 xl:text-base"
+            class="text-sm font-medium md:ml-4 xl:relative xl:-top-1 ml-6 xl:mt-1 mb-1 md:mt-0 xl:ml-4 xl:text-sm md:text-xs"
             id="Artist"
           ></p>
         </div>
@@ -75,9 +75,9 @@
             class="mr-8 mb-2 xl:mb-0 xl:mt-[.11rem] xl:mr-8"
             id="play-btn"
           >
-            <div class="w-5 h-4 xl:w-5 xl:h-6 xl:mt-[.13rem]" id="play-icon">
+            <div class="w-5 h-4 xl:w-5 xl:h-6" id="play-icon">
               <svg
-                viewBox="0 0.8 12 13"
+                viewBox="0 0 12 14"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -120,10 +120,7 @@
                 </g>
               </svg>
             </div>
-            <div
-              class="w-5 h-4 xl:w-5 xl:h-6 xl:mt-[.13rem] hidden"
-              id="pause-icon"
-            >
+            <div class="w-5 h-4 xl:w-5 xl:h-6 hidden" id="pause-icon">
               <svg
                 viewBox="0 0 7 8"
                 fill="none"
