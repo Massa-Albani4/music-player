@@ -8,7 +8,6 @@ module.exports = {
         gray: "#D9D9D9",
         black: "#1B1B1B",
         "dark-gray": "#9A9A9A",
-        white: "#F8F8FF",
       },
     },
     fontFamily: {
