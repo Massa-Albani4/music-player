@@ -772,6 +772,10 @@ video {
   border-radius: 50%;
 }
 
+nav ul {
+  background-color: #E9873C;
+}
+
 @media (min-width: 768px) {
   .md\:mb-\[\.4rem\] {
     margin-bottom: .4rem;
