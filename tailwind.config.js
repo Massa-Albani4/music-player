@@ -5,14 +5,16 @@ module.exports = {
     extend: {
       colors: {
         orange: "#E9873C",
-        gray: "#D9D9D9",
-        black: "#1B1B1B",
-        "dark-gray": "#9A9A9A",
+        gray: "#191919",
+        black: "#020202",
+        "gray-500": "#2F2F2F", 
+        "gray-400": "#878787",
+        white: "#F8F8FF"
       },
     },
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
     },
   },
-  plugins: [require("tailwindcss-debug-screens")],
+  plugins: [],
 };
