@@ -11,10 +11,15 @@ module.exports = {
         "gray-400": "#878787",
         white: "#F8F8FF"
       },
+      screens: {
+        "2xl": "1920px",
+        "xl": "1440px",
+        sm: "432px"
+      }
     },
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
-    },
+    }
   },
   plugins: [],
 };
