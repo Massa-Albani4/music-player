@@ -15,8 +15,8 @@ const songs = ["spongebob closing theme", "grass skirt chase", "winter remix"];
 const Artists = ["Steve Belfer", "Sage Guyton", "Vivaldi"];
 const covers = [
   "url(../src/assets/spongebob.jpg)",
-  "url(../src/assets/remix.jpg)",
-  "url(../src/assets/vivaldi.jpg)",
+  "url(../src/assets/spongebob-patrick.jpg)",
+  "url(../src/assets/violin.jpg)",
 ];
 let isPlaying = false;
 
