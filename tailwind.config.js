@@ -12,9 +12,9 @@ module.exports = {
         white: "#F8F8FF"
       },
       screens: {
-        "2xl": "1920px",
-        "xl": "1440px",
-        sm: "432px"
+        xl: "1920px",
+        sm: "432px",
+        lg: "1440px",
       }
     },
     fontFamily: {
