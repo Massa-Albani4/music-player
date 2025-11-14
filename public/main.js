@@ -11,11 +11,11 @@ const Artist = document.getElementById("Artist");
 const pauseIcon = document.getElementById("pause-icon");
 const playIcon = document.getElementById("play-icon");
 
-const songs = ["spongebob closing theme", "grass skirt chase", "winter remix"];
-const Artists = ["Steve Belfer", "Sage Guyton", "Vivaldi"];
+const songs = ["Gettin' My Mom On", "What do they know", "winter remix"];
+const Artists = ["Jack Stauber", "Mindless Self Indulgence", "Vivaldi"];
 const covers = [
-  "url(../src/assets/spongebob.jpg)",
-  "url(../src/assets/spongebob-patrick.jpg)",
+  "url(../src/assets/HiLo-cover.jpg)",
+  "url(../src/assets/Mindless-Self-Indulgence.jpg)",
   "url(../src/assets/violin.jpg)",
 ];
 let isPlaying = false;

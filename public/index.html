@@ -16,16 +16,16 @@
     class="font-montserrat debug-screens flex h-screen flex-col items-center justify-center bg-black px-6"
   >
     <div
-      class="w-full rounded-md border-[1px] border-gray-500 bg-gray md:w-[70%] xl:w-[40%] xl:rounded-xl xl:border-2 xl:pt-7"
+      class="w-full rounded-md border-[1px] border-gray-500 bg-gray md:w-[70%] lg:w-1/2 lg:pt-5 xl:w-[45%] xl:rounded-xl xl:border-2 xl:pt-7"
       id="music-container"
     >
-      <div class="flex md:flex-col lg:flex-row xl:flex-row">
+      <div class="flex sm:flex-col md:flex-col lg:flex-row xl:flex-row">
         <div
-          class="h-72 w-full rounded-t-md bg-cover bg-center md:h-80 md:rounded-t-md lg:h-24 lg:w-44 lg:rounded-[3rem] xl:mb-2 xl:ml-8 xl:h-36 xl:w-[20%] xl:rounded-[5rem] xl:border-2 xl:border-black"
+          class="h-72 w-full rounded-t-md bg-cover bg-center md:h-80 md:rounded-t-md lg:h-24 lg:w-44 lg:rounded-[3rem] xl:mb-2 xl:ml-9 xl:h-32 xl:w-[18%] xl:rounded-[5rem] xl:border-2 xl:border-black"
           style="background-image: url(&quot;../src/assets/Talisman.jpg&quot;)"
           id="song-cover"
         ></div>
-        <div class="xl:ml-1">
+        <div class="xl:ml-3">
           <h1
             class="ml-6 mt-3 p-0 text-lg text-white md:ml-7 md:mt-4 md:text-2xl xl:ml-[1rem] xl:mt-0 xl:text-3xl xl:font-medium"
             id="song-title"
@@ -38,7 +38,7 @@
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          class="mt-4 h-[.35rem] w-[88%] cursor-pointer rounded-md bg-black md:h-2 xl:mt-7 xl:h-2 xl:w-[87%]"
+          class="mt-4 h-[.35rem] w-[88%] cursor-pointer rounded-md bg-black md:h-2 xl:mt-8 xl:h-[.55rem] xl:w-[87%]"
           id="progress-container"
         >
           <div
@@ -48,10 +48,10 @@
         </div>
         <audio src="" id="audio"></audio>
         <div
-          class="my-5 flex items-center justify-center md:my-6 lg:my-4 xl:my-5"
+          class="my-5 flex items-center justify-center md:my-6 lg:my-4 xl:my-8"
         >
-          <button class="mr-11 md:mr-14 lg:mr-8 xl:mr-14" id="prev-btn">
-            <div class="h-5 w-6 md:h-6 md:w-7 lg:h-4 lg:w-5 xl:h-8 xl:w-9">
+          <button class="mr-11 md:mr-14 lg:mr-8 xl:mr-20" id="prev-btn">
+            <div class="h-5 w-6 md:h-6 md:w-7 lg:h-4 lg:w-5 xl:size-10">
               <svg
                 viewBox="0 0 15 14"
                 fill="none"
@@ -74,11 +74,11 @@
             </div>
           </button>
           <button
-            class="mb-2 mr-11 md:mr-14 lg:mb-0 lg:mr-8 lg:mt-[.11rem] xl:h-8 xl:w-9"
+            class="mb-2 mr-11 md:mr-14 lg:mb-0 lg:mr-8 lg:mt-[.11rem] xl:mr-20 xl:h-8 xl:w-9"
             id="play-btn"
           >
             <div
-              class="h-5 w-6 md:h-6 md:w-7 lg:h-6 lg:w-5 xl:h-8 xl:w-9"
+              class="h-5 w-6 md:h-6 md:w-7 lg:h-6 lg:w-5 xl:mb-2 xl:size-10"
               id="play-icon"
             >
               <svg
@@ -126,7 +126,7 @@
               </svg>
             </div>
             <div
-              class="hidden h-5 w-6 md:h-6 md:w-7 lg:h-6 lg:w-5 xl:h-8 xl:w-9"
+              class="hidden h-5 w-6 md:h-6 md:w-7 lg:h-6 lg:w-5 xl:size-10"
               id="pause-icon"
             >
               <svg
@@ -144,7 +144,7 @@
             </div>
           </button>
           <button id="next-btn">
-            <div class="h-5 w-6 md:h-6 md:w-7 lg:h-4 lg:w-5 xl:h-8 xl:w-9">
+            <div class="h-5 w-6 md:h-6 md:w-7 lg:h-4 lg:w-5 xl:size-10">
               <svg
                 viewBox="0 0 15 14"
                 version="1.1"
