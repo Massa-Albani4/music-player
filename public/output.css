@@ -742,6 +742,10 @@ nav ul {
 }
 
 @media (min-width: 432px) {
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -823,36 +827,89 @@ nav ul {
     margin-right: 2rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:mt-\[\.11rem\] {
     margin-top: .11rem;
   }
 
-  .lg\:h-24 {
-    height: 6rem;
+  .lg\:ml-1 {
+    margin-left: 0.25rem;
   }
 
-  .lg\:h-4 {
-    height: 1rem;
+  .lg\:ml-12 {
+    margin-left: 3rem;
   }
 
-  .lg\:h-6 {
-    height: 1.5rem;
+  .lg\:ml-5 {
+    margin-left: 1.25rem;
   }
 
-  .lg\:w-44 {
-    width: 11rem;
+  .lg\:ml-7 {
+    margin-left: 1.75rem;
   }
 
-  .lg\:w-5 {
-    width: 1.25rem;
+  .lg\:ml-8 {
+    margin-left: 2rem;
   }
 
-  .lg\:w-\[\] {
-    width: ;
+  .lg\:mt-6 {
+    margin-top: 1.5rem;
   }
 
-  .lg\:w-1\/4 {
-    width: 25%;
+  .lg\:mt-9 {
+    margin-top: 2.25rem;
+  }
+
+  .lg\:size-32 {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .lg\:size-8 {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .lg\:size-3 {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .lg\:size-2 {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .lg\:size-28 {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .lg\:h-7 {
+    height: 1.75rem;
+  }
+
+  .lg\:w-8 {
+    width: 2rem;
+  }
+
+  .lg\:w-\[52\%\] {
+    width: 52%;
+  }
+
+  .lg\:w-\[5\%\] {
+    width: 5%;
+  }
+
+  .lg\:w-\[5-\%\] {
+    width: 5-%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:w-2\/5 {
@@ -871,174 +928,58 @@ nav ul {
     width: 50%;
   }
 
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[45\] {
+    width: 45;
+  }
+
+  .lg\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .lg\:w-\[4\%\] {
+    width: 4%;
+  }
+
+  .lg\:w-\[43\%\] {
+    width: 43%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
-  .lg\:rounded-\[3rem\] {
-    border-radius: 3rem;
+  .lg\:rounded-\[3\.8rem\] {
+    border-radius: 3.8rem;
+  }
+
+  .lg\:rounded-xl {
+    border-radius: 0.75rem;
   }
 
   .lg\:pt-5 {
     padding-top: 1.25rem;
   }
-}
 
-@media (min-width: 1920px) {
-  .xl\:relative {
-    position: relative;
+  .lg\:pt-6 {
+    padding-top: 1.5rem;
   }
 
-  .xl\:-top-1 {
-    top: -0.25rem;
-  }
-
-  .xl\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .xl\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .xl\:ml-3 {
-    margin-left: 0.75rem;
-  }
-
-  .xl\:ml-4 {
-    margin-left: 1rem;
-  }
-
-  .xl\:ml-9 {
-    margin-left: 2.25rem;
-  }
-
-  .xl\:ml-\[1rem\] {
-    margin-left: 1rem;
-  }
-
-  .xl\:mr-20 {
-    margin-right: 5rem;
-  }
-
-  .xl\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .xl\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .xl\:mt-8 {
-    margin-top: 2rem;
-  }
-
-  .xl\:size-10 {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .xl\:h-32 {
-    height: 8rem;
-  }
-
-  .xl\:h-8 {
-    height: 2rem;
-  }
-
-  .xl\:h-\[\.55rem\] {
-    height: .55rem;
-  }
-
-  .xl\:w-9 {
-    width: 2.25rem;
-  }
-
-  .xl\:w-\[18\%\] {
-    width: 18%;
-  }
-
-  .xl\:w-\[40\%\] {
-    width: 40%;
-  }
-
-  .xl\:w-\[87\%\] {
-    width: 87%;
-  }
-
-  .xl\:w-\[0\%\] {
-    width: 0%;
-  }
-
-  .xl\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .xl\:w-\[45\%\] {
-    width: 45%;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .xl\:rounded-\[5rem\] {
-    border-radius: 5rem;
-  }
-
-  .xl\:rounded-xl {
-    border-radius: 0.75rem;
-  }
-
-  .xl\:border-2 {
-    border-width: 2px;
-  }
-
-  .xl\:border-black {
-    --tw-border-opacity: 1;
-    border-color: rgb(2 2 2 / var(--tw-border-opacity));
-  }
-
-  .xl\:pt-7 {
-    padding-top: 1.75rem;
-  }
-
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .xl\:text-2xl {
+  .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .xl\:font-medium {
-    font-weight: 500;
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .xl\:transition-\[width\] {
-    transition-property: width;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-  }
-
-  .xl\:duration-\[0\.1s\] {
-    transition-duration: 0.1s;
-  }
-
-  .xl\:ease-linear {
-    transition-timing-function: linear;
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
