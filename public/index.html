@@ -31,14 +31,14 @@
             id="song-title"
           ></h1>
           <p
-            class="mb-1 ml-6 text-sm font-medium text-gray-400 md:mb-3 md:ml-7 md:text-xl lg:text-xl"
+            class="mb-1 ml-6 text-sm font-medium text-gray-400 md:mb-3 md:ml-7 md:mt-1 md:text-xl lg:mt-1 lg:text-xl"
             id="Artist"
           ></p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          class="mt-4 h-[.35rem] w-[88%] cursor-pointer rounded-md bg-black md:h-2 lg:mt-9"
+          class="mt-5 h-[.35rem] w-[88%] cursor-pointer rounded-md bg-black md:h-2 lg:mt-9"
           id="progress-container"
         >
           <div
@@ -47,9 +47,9 @@
           ></div>
         </div>
         <audio src="" id="audio"></audio>
-        <div class="my-5 flex items-center justify-center md:my-6 lg:my-4">
-          <button class="mr-11 md:mr-14 lg:mr-8" id="prev-btn">
-            <div class="h-5 w-6 md:h-6 md:w-7 lg:h-7 lg:w-8">
+        <div class="my-5 flex items-center justify-center md:my-6 lg:my-6">
+          <button class="mr-11 md:mr-14 lg:mr-14" id="prev-btn">
+            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8">
               <svg
                 viewBox="0 0 15 14"
                 fill="none"
@@ -71,11 +71,8 @@
               </svg>
             </div>
           </button>
-          <button
-            class="mb-2 mr-11 md:mr-14 lg:mb-0 lg:mr-8 lg:mt-[.11rem]"
-            id="play-btn"
-          >
-            <div class="h-5 w-6 md:h-6 md:w-7 lg:size-8" id="play-icon">
+          <button class="mb-2 mr-11 md:mr-14 lg:mb-2 lg:mr-14" id="play-btn">
+            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8" id="play-icon">
               <svg
                 viewBox="0 0 12 14"
                 version="1.1"
@@ -121,7 +118,7 @@
               </svg>
             </div>
             <div
-              class="hidden h-5 w-6 md:h-6 md:w-7 lg:h-7 lg:w-8"
+              class="hidden h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8"
               id="pause-icon"
             >
               <svg
@@ -139,7 +136,7 @@
             </div>
           </button>
           <button id="next-btn">
-            <div class="h-5 w-6 md:h-6 md:w-7 lg:h-7 lg:w-8">
+            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8">
               <svg
                 viewBox="0 0 15 14"
                 version="1.1"
