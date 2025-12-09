@@ -15,222 +15,30 @@
   <body
     class="font-montserrat debug-screens flex h-screen flex-col items-center justify-center bg-black px-6"
   >
-    <!-- <div
-      class="w-full  border-[1px] border-gray-500 bg-gray md:w-[70%] lg:w-[43%] lg:rounded-xl lg:pt-6"
-      id="music-container"
-    ></div> -->
-    <div class="flex flex-col md:flex-col lg:flex-row">
-        <div
-          class="h-72 w-[22rem] border-2 rounded-md bg-cover md:h-80 md:rounded-t-md lg:ml-7 lg:size-28 lg:rounded-[3.8rem] lg:border-4 lg:border-gray-500"
-          style="background-image: url(&quot;../src/assets/Talisman.jpg&quot;)"
-          id="song-cover"
-        ></div>
-        <div class="ml-1">
-          <h1
-            class=" mt-3 p-0 text-lg text-white md:ml-7 md:mt-4 md:text-2xl lg:mt-0 lg:text-[1.7em]"
-            id="song-title"
-          ></h1>
-          <p
-            class="mb-1  text-sm font-medium text-gray-400 md:mb-3 md:ml-7 md:mt-1 md:text-xl lg:mt-1 lg:text-xl"
-            id="Artist"
-          ></p>
-        </div>
-      </div>
-      <div class="flex flex-col items-center justify-center">
-        <div
-          class="mt-5 h-[.35rem] w-[21.5rem] cursor-pointer rounded-md bg-gray-500 md:h-2 lg:mt-9"
-          id="progress-container"
-        >
-          <div
-            class="flex h-full w-[0.3%] items-center justify-end rounded-md bg-gray-400"
-            id="progress-bar"
-          ></div>
-        </div>
-        <audio src="" id="audio"></audio>
-        <div class="my-6 flex items-center justify-center md:my-6 lg:my-6">
-          <button class="mr-11 md:mr-14 lg:mr-14" id="prev-btn">
-            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8">
-              <svg
-                viewBox="0 0 15 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_142_10)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1 0C1.55 0 2 0.45 2 1V11C2 11.55 1.55 12 1 12C0.45 12 0 11.55 0 11V1C0 0.45 0.45 0 1 0ZM4.66 6.82L10.43 10.89C11.09 11.36 12.01 10.88 12.01 10.07V1.93C12.01 1.12 11.1 0.65 10.43 1.11L4.66 5.18C4.09 5.58 4.09 6.42 4.66 6.82Z"
-                    fill="#F8F8FF"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_142_10">
-                    <rect width="13" height="12" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </button>
-          <button class="mb-2 mr-11 md:mr-14 lg:mb-2 lg:mr-14" id="play-btn">
-            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8" id="play-icon">
-              <svg
-                viewBox="0 0 12 14"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <title>play_arrow</title>
-                <desc>play button icon</desc>
-                <g
-                  id="Icons"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                >
-                  <g
-                    id="Rounded"
-                    transform="translate(-753.000000, -955.000000)"
-                  >
-                    <g id="AV" transform="translate(100.000000, 852.000000)">
-                      <g
-                        id="-Round-/-AV-/-play_arrow"
-                        transform="translate(646.000000, 98.000000)"
-                      >
-                        <g>
-                          <rect
-                            id="Rectangle-Copy-50"
-                            x="0"
-                            y="0"
-                            width="24"
-                            height="24"
-                          ></rect>
-                          <path
-                            d="M7,6.82 L7,17.18 C7,17.97 7.87,18.45 8.54,18.02 L16.68,12.84 C17.3,12.45 17.3,11.55 16.68,11.15 L8.54,5.98 C7.87,5.55 7,6.03 7,6.82 Z"
-                            id="🔹Icon-Color"
-                            fill="#F8F8FF"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <div
-              class="hidden h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8"
-              id="pause-icon"
-            >
-              <svg
-                viewBox="0 0 7 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M1 0C0.448 0 0 0.448 0 1V7C0 7.552 0.448 8 1 8C1.552 8 2 7.552 2 7V1C2 0.448 1.552 0 1 0ZM6 1V7C6 7.552 5.552 8 5 8C4.448 8 4 7.552 4 7V1C4 0.448 4.448 0 5 0C5.552 0 6 0.448 6 1Z"
-                  fill="#F8F8FF"
-                />
-              </svg>
-            </div>
-          </button>
-          <button id="next-btn">
-            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8">
-              <svg
-                viewBox="0 0 15 14"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <title>skip_next</title>
-                <desc>next button icon</desc>
-                <g
-                  id="Icons"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                >
-                  <g
-                    id="Rounded"
-                    transform="translate(-548.000000, -1000.000000)"
-                  >
-                    <g id="AV" transform="translate(100.000000, 852.000000)">
-                      <g
-                        id="-Round-/-AV-/-skip_next"
-                        transform="translate(442.000000, 142.000000)"
-                      >
-                        <g>
-                          <rect
-                            id="Rectangle-Copy-52"
-                            x="0"
-                            y="0"
-                            width="24"
-                            height="24"
-                          ></rect>
-                          <path
-                            d="M7.58,16.89 L13.35,12.82 C13.91,12.42 13.91,11.58 13.35,11.19 L7.58,7.11 C6.91,6.65 6,7.12 6,7.93 L6,16.07 C6,16.88 6.91,17.35 7.58,16.89 Z M16,7 L16,17 C16,17.55 16.45,18 17,18 C17.55,18 18,17.55 18,17 L18,7 C18,6.45 17.55,6 17,6 C16.45,6 16,6.45 16,7 Z"
-                            id="🔹Icon-Color"
-                            fill="#F8F8FF"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-      
-    <script src="main.js"></script>
-  </body>
-</html>
-
-<!-- <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Music Player</title>
-    <link rel="stylesheet" href="./output.css" />
-  </head>
-  <body
-    class="font-montserrat debug-screens flex h-screen flex-col items-center justify-center bg-black px-6"
-  >
     <div
-      class="w-full rounded-md border-[1px] border-gray-500 bg-gray md:w-[70%] lg:w-[43%] lg:rounded-xl lg:pt-6"
+      class="w-[75%] md:w-[50%] md:rounded-xl md:border-[1px] md:border-gray-500 md:bg-gray lg:w-[43%] lg:pt-6"
       id="music-container"
     >
       <div class="flex flex-col md:flex-col lg:flex-row">
         <div
-          class="h-72 w-full rounded-t-md lg:border-4 lg:border-gray-500 bg-cover bg-center md:h-80 md:rounded-t-md lg:ml-7 lg:size-28 lg:rounded-[3.8rem]"
+          class="h-72 w-full rounded-t-md bg-cover bg-center md:h-52 md:rounded-t-md lg:ml-7 lg:size-28 lg:rounded-[3.8rem] lg:border-4 lg:border-gray-500"
           style="background-image: url(&quot;../src/assets/Talisman.jpg&quot;)"
           id="song-cover"
         ></div>
         <div>
           <h1
-            class="ml-6 mt-3 p-0 text-lg text-white md:ml-7 md:mt-4 md:text-2xl lg:mt-0 lg:text-[1.7em]"
+            class="mt-3 p-0 text-lg text-white md:ml-5 md:mt-4 lg:mt-0 lg:text-[1.7em]"
             id="song-title"
           ></h1>
           <p
-            class="mb-1 ml-6 text-sm font-medium text-gray-400 md:mb-3 md:ml-7 md:mt-1 md:text-xl lg:mt-1 lg:text-xl"
+            class="mb-1 text-sm font-medium text-gray-400 md:ml-5 lg:mt-1 lg:text-xl"
             id="Artist"
           ></p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          class="mt-5 h-[.35rem] w-[88%] cursor-pointer rounded-md bg-black md:h-2 lg:mt-9"
+          class="ml-1 mt-5 h-[.35rem] w-[88%] cursor-pointer rounded-md bg-gray-500 md:h-2 lg:mt-9"
           id="progress-container"
         >
           <div
@@ -239,9 +47,9 @@
           ></div>
         </div>
         <audio src="" id="audio"></audio>
-        <div class="my-5 flex items-center justify-center md:my-6 lg:my-6">
-          <button class="mr-11 md:mr-14 lg:mr-14" id="prev-btn">
-            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8">
+        <div class="my-6 flex items-center justify-center md:my-5 lg:my-6">
+          <button class="mr-11 md:mr-10 lg:mr-14" id="prev-btn">
+            <div class="h-5 w-6 md:h-4 md:w-5 lg:h-7 lg:w-8">
               <svg
                 viewBox="0 0 15 14"
                 fill="none"
@@ -263,8 +71,8 @@
               </svg>
             </div>
           </button>
-          <button class="mb-2 mr-11 md:mr-14 lg:mb-2 lg:mr-14" id="play-btn">
-            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8" id="play-icon">
+          <button class="mb-2 mr-11 md:mr-10 lg:mb-2 lg:mr-14" id="play-btn">
+            <div class="h-5 w-6 md:h-4 md:w-5 lg:h-7 lg:w-8" id="play-icon">
               <svg
                 viewBox="0 0 12 14"
                 version="1.1"
@@ -310,7 +118,7 @@
               </svg>
             </div>
             <div
-              class="hidden h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8"
+              class="hidden h-5 w-6 md:h-4 md:w-5 lg:h-7 lg:w-8"
               id="pause-icon"
             >
               <svg
@@ -328,7 +136,7 @@
             </div>
           </button>
           <button id="next-btn">
-            <div class="h-5 w-6 md:h-7 md:w-8 lg:h-7 lg:w-8">
+            <div class="h-5 w-6 md:h-4 md:w-5 lg:h-7 lg:w-8">
               <svg
                 viewBox="0 0 15 14"
                 version="1.1"
@@ -379,4 +187,4 @@
     </div>
     <script src="main.js"></script>
   </body>
-</html> -->
+</html>
