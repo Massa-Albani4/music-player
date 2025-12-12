@@ -575,6 +575,10 @@ video {
   margin-right: 2.75rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -619,12 +623,8 @@ video {
   width: 0.3%;
 }
 
-.w-\[75\%\] {
-  width: 75%;
-}
-
-.w-\[88\%\] {
-  width: 88%;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-full {
@@ -637,6 +637,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -653,6 +657,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-\[16\.5rem\] {
+  gap: 16.5rem;
 }
 
 .rounded-md {
@@ -720,6 +728,12 @@ video {
   color: rgb(248 248 255 / var(--tw-text-opacity));
 }
 
+.shadow-\[0_10px_30px_rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
+  --tw-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .progressBar {
   -webkit-appearance: none;
 }
@@ -748,10 +762,6 @@ nav ul {
 
   .md\:mr-10 {
     margin-right: 2.5rem;
-  }
-
-  .md\:mt-1 {
-    margin-top: 0.25rem;
   }
 
   .md\:mt-4 {
@@ -804,101 +814,86 @@ nav ul {
     --tw-bg-opacity: 1;
     background-color: rgb(25 25 25 / var(--tw-bg-opacity));
   }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
 }
 
-@media (min-width: 1440px) {
-  .lg\:my-6 {
+@media (min-width: 1280px) {
+  .xl\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
-  .lg\:mb-2 {
+  .xl\:mb-2 {
     margin-bottom: 0.5rem;
   }
 
-  .lg\:ml-7 {
+  .xl\:ml-7 {
     margin-left: 1.75rem;
   }
 
-  .lg\:mr-14 {
+  .xl\:mr-14 {
     margin-right: 3.5rem;
   }
 
-  .lg\:mt-0 {
+  .xl\:mt-0 {
     margin-top: 0px;
   }
 
-  .lg\:mt-1 {
+  .xl\:mt-1 {
     margin-top: 0.25rem;
   }
 
-  .lg\:mt-9 {
-    margin-top: 2.25rem;
+  .xl\:mt-7 {
+    margin-top: 1.75rem;
   }
 
-  .lg\:size-28 {
-    width: 7rem;
-    height: 7rem;
+  .xl\:size-24 {
+    width: 6rem;
+    height: 6rem;
   }
 
-  .lg\:h-7 {
-    height: 1.75rem;
+  .xl\:h-5 {
+    height: 1.25rem;
   }
 
-  .lg\:w-8 {
-    width: 2rem;
+  .xl\:w-6 {
+    width: 1.5rem;
   }
 
-  .lg\:w-\[43\%\] {
-    width: 43%;
+  .xl\:w-\[38\%\] {
+    width: 38%;
   }
 
-  .lg\:flex-row {
+  .xl\:flex-row {
     flex-direction: row;
   }
 
-  .lg\:rounded-\[3\.8rem\] {
+  .xl\:rounded-\[3\.8rem\] {
     border-radius: 3.8rem;
   }
 
-  .lg\:border-4 {
-    border-width: 4px;
+  .xl\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
-  .lg\:border-gray-500 {
+  .xl\:border-2 {
+    border-width: 2px;
+  }
+
+  .xl\:border-gray-500 {
     --tw-border-opacity: 1;
     border-color: rgb(47 47 47 / var(--tw-border-opacity));
   }
 
-  .lg\:pt-6 {
-    padding-top: 1.5rem;
+  .xl\:pt-5 {
+    padding-top: 1.25rem;
   }
 
-  .lg\:text-\[1\.7em\] {
-    font-size: 1.7em;
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
-  .lg\:text-xl {
+  .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }

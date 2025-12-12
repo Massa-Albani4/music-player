@@ -10,6 +10,8 @@ const cover = document.getElementById("song-cover");
 const Artist = document.getElementById("Artist");
 const pauseIcon = document.getElementById("pause-icon");
 const playIcon = document.getElementById("play-icon");
+const currentTimeLabel = document.getElementById("current-time");
+const durationLabel = document.getElementById("song-duration");
 
 const songs = ["Gettin' My Mom On", "What do they know", "winter remix"];
 const Artists = ["Jack Stauber", "Mindless Self Indulgence", "Vivaldi"];
@@ -18,10 +20,29 @@ const covers = [
   "url(../src/assets/Mindless-Self-Indulgence.jpg)",
   "url(../src/assets/violin.jpg)",
 ];
+const duration = audio.duration;
 let isPlaying = false;
-
 let songIndex = 1;
 let artistIndex = songIndex;
+
+audio.addEventListener("loadedmetadata", () => {
+  function formatDuration(duration) {
+    // Calculate minutes and seconds
+    const minutes = Math.floor(duration / 60);
+    const seconds = Math.floor(duration % 60);
+
+    // Pad single-digit minutes and seconds with a leading zero
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(seconds).padStart(2, '0');
+
+    // Return the formatted string
+    return `${formattedMinutes}:${formattedSeconds}`;
+  }
+
+  // Update the duration label when metadata is loaded
+  durationLabel.innerHTML = formatDuration(audio.duration);
+
+});
 
 // Initially load song info
 loadSong(songs[songIndex]);
@@ -86,6 +107,15 @@ function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
   const progressPercent = (currentTime / duration) * 100;
   progressBar.style.width = `${progressPercent}%`;
+  
+  const minutes = Math.floor(audio.currentTime / 60);
+  const seconds = Math.floor(audio.currentTime % 60);
+
+  // Pad single-digit minutes and seconds with a leading zero
+  const formattedMinutes = String(minutes).padStart(2, '0');
+  const formattedSeconds = String(seconds).padStart(2, '0');
+
+  currentTimeLabel.innerHTML = `${formattedMinutes}:${formattedSeconds}`;
 }
 
 function setProgress(e) {

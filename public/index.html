@@ -16,29 +16,29 @@
     class="font-montserrat debug-screens flex h-screen flex-col items-center justify-center bg-black px-6"
   >
     <div
-      class="w-[75%] md:w-[50%] md:rounded-xl md:border-[1px] md:border-gray-500 md:bg-gray lg:w-[43%] lg:pt-6"
+      class="w-[90%] shadow-[0_10px_30px_rgba(0,0,0,0.5)] md:w-[50%] md:rounded-xl md:border-[1px] md:border-gray-500 md:bg-gray xl:w-[38%] xl:rounded-lg xl:pt-5"
       id="music-container"
     >
-      <div class="flex flex-col md:flex-col lg:flex-row">
+      <div class="flex flex-col md:flex-col xl:flex-row">
         <div
-          class="h-72 w-full rounded-t-md bg-cover bg-center md:h-52 md:rounded-t-md lg:ml-7 lg:size-28 lg:rounded-[3.8rem] lg:border-4 lg:border-gray-500"
+          class="h-72 w-full rounded-t-md bg-cover bg-center md:h-52 md:rounded-t-md xl:ml-7 xl:size-24 xl:rounded-[3.8rem] xl:border-2 xl:border-gray-500"
           style="background-image: url(&quot;../src/assets/Talisman.jpg&quot;)"
           id="song-cover"
         ></div>
         <div>
           <h1
-            class="mt-3 p-0 text-lg text-white md:ml-5 md:mt-4 lg:mt-0 lg:text-[1.7em]"
+            class="mt-3 p-0 text-lg text-white md:ml-5 md:mt-4 xl:mt-0 xl:text-xl"
             id="song-title"
           ></h1>
           <p
-            class="mb-1 text-sm font-medium text-gray-400 md:ml-5 lg:mt-1 lg:text-xl"
+            class="mb-1 text-sm font-medium text-white md:ml-5 xl:mt-1 xl:text-base"
             id="Artist"
           ></p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          class="ml-1 mt-5 h-[.35rem] w-[88%] cursor-pointer rounded-md bg-gray-500 md:h-2 lg:mt-9"
+          class="ml-1 mt-5 h-[.35rem] w-full cursor-pointer rounded-md bg-gray-500 md:h-2 xl:mt-7"
           id="progress-container"
         >
           <div
@@ -47,9 +47,13 @@
           ></div>
         </div>
         <audio src="" id="audio"></audio>
-        <div class="my-6 flex items-center justify-center md:my-5 lg:my-6">
-          <button class="mr-11 md:mr-10 lg:mr-14" id="prev-btn">
-            <div class="h-5 w-6 md:h-4 md:w-5 lg:h-7 lg:w-8">
+        <div class="mt-1 flex flex-row gap-[16.5rem] text-gray-400">
+          <p class="" id="current-time">00:00</p>
+          <p class="" id="song-duration">02:44</p>
+        </div>
+        <div class="my-6 flex items-center justify-center md:my-5 xl:my-6">
+          <button class="mr-11 md:mr-10 xl:mr-14" id="prev-btn">
+            <div class="h-5 w-6 md:h-4 md:w-5 xl:h-5 xl:w-6">
               <svg
                 viewBox="0 0 15 14"
                 fill="none"
@@ -71,8 +75,8 @@
               </svg>
             </div>
           </button>
-          <button class="mb-2 mr-11 md:mr-10 lg:mb-2 lg:mr-14" id="play-btn">
-            <div class="h-5 w-6 md:h-4 md:w-5 lg:h-7 lg:w-8" id="play-icon">
+          <button class="mb-2 mr-11 md:mr-10 xl:mb-2 xl:mr-14" id="play-btn">
+            <div class="h-5 w-6 md:h-4 md:w-5 xl:h-5 xl:w-6" id="play-icon">
               <svg
                 viewBox="0 0 12 14"
                 version="1.1"
@@ -118,7 +122,7 @@
               </svg>
             </div>
             <div
-              class="hidden h-5 w-6 md:h-4 md:w-5 lg:h-7 lg:w-8"
+              class="hidden h-5 w-6 md:h-4 md:w-5 xl:h-5 xl:w-6"
               id="pause-icon"
             >
               <svg
@@ -136,7 +140,7 @@
             </div>
           </button>
           <button id="next-btn">
-            <div class="h-5 w-6 md:h-4 md:w-5 lg:h-7 lg:w-8">
+            <div class="h-5 w-6 md:h-4 md:w-5 xl:h-5 xl:w-6">
               <svg
                 viewBox="0 0 15 14"
                 version="1.1"
