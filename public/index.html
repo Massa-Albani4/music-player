@@ -38,7 +38,7 @@
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          class="ml-1 mt-5 h-[.35rem] w-full cursor-pointer rounded-md bg-gray-500 md:h-2 xl:mt-7"
+          class="ml-1 mt-5 h-[.35rem] w-full cursor-pointer rounded-md bg-gray-500 md:ml-0 md:h-2 md:w-[88%] xl:mt-7"
           id="progress-container"
         >
           <div
@@ -47,11 +47,15 @@
           ></div>
         </div>
         <audio src="" id="audio"></audio>
-        <div class="mt-1 flex flex-row gap-[16.5rem] text-gray-400">
+        <div
+          class="mt-1 flex flex-row gap-[16.5rem] text-sm text-gray-400 md:gap-[15.5rem]"
+        >
           <p class="" id="current-time">00:00</p>
           <p class="" id="song-duration">02:44</p>
         </div>
-        <div class="my-6 flex items-center justify-center md:my-5 xl:my-6">
+        <div
+          class="my-3 flex items-center justify-center md:mb-6 md:mt-1 xl:my-6"
+        >
           <button class="mr-11 md:mr-10 xl:mr-14" id="prev-btn">
             <div class="h-5 w-6 md:h-4 md:w-5 xl:h-5 xl:w-6">
               <svg
