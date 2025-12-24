@@ -23,6 +23,7 @@ A music player built with HTML, JavaScript, and TailwindCSS allowing users to pl
 git clone https://github.com/yourname/music-player.git
 cd music-player
 npm install
+```
 
 ## Credits
 
