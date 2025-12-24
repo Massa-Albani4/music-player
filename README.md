@@ -1,6 +1,4 @@
 # Music Player
-
-## Overview
 A music player built with HTML, JavaScript, and TailwindCSS allowing users to play music.
 
 ## Features
