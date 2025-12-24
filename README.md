@@ -1,20 +1,31 @@
 # Music Player
 
 ## Overview
-
-A music player built with React and TailwindCSS allowing users to play music
+A music player built with HTML, JavaScript, and TailwindCSS allowing users to play music.
 
 ## Features
-
-- progress bar
-- navigation buttons
+- Progress Bar
+- Navigation Buttons
+- Playback Time
+- Volume Control
 
 ## Tech Stack
-
-- HTML, TailwindCSS, Javascript
+- HTML
+- JavaScript
+- TailwindCSS
 
 ## Setup
 
-1. Clone the repo: https://github.com/Massa-Albani4/music-player.git
+### Prerequisites
+- Node.js
+- npm
 
-2. live demo: https://massa-albani4.github.io/music-player/public/
+### Steps
+```bash
+git clone https://github.com/yourname/music-player.git
+cd music-player
+npm install
+
+## Credits
+
+icons by João Gabriel Mendes Corrêa from thenounproject.com — licensed under CC BY 3.0

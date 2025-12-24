@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./public/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -13,7 +13,6 @@ module.exports = {
       },
       screens: {
         sm: "432px",
-        lg: "1440px",
       },
     },
     fontFamily: {

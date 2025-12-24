@@ -1,4 +1,4 @@
-const musicContainer = document.getElementById("music-container");
+const musicContainer = document.getElementById("music-card");
 const playBtn = document.getElementById("play-btn");
 const previousBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
@@ -12,6 +12,7 @@ const pauseIcon = document.getElementById("pause-icon");
 const playIcon = document.getElementById("play-icon");
 const currentTimeLabel = document.getElementById("current-time");
 const durationLabel = document.getElementById("song-duration");
+const volumeSlider = document.getElementById("volume-slider");
 
 const songs = ["Gettin' My Mom On", "What do they know", "winter remix"];
 const Artists = ["Jack Stauber", "Mindless Self Indulgence", "Vivaldi"];
@@ -25,23 +26,9 @@ let isPlaying = false;
 let songIndex = 1;
 let artistIndex = songIndex;
 
-audio.addEventListener("loadedmetadata", () => {
-  function formatDuration(duration) {
-    // Calculate minutes and seconds
-    const minutes = Math.floor(duration / 60);
-    const seconds = Math.floor(duration % 60);
-
-    // Pad single-digit minutes and seconds with a leading zero
-    const formattedMinutes = String(minutes).padStart(2, '0');
-    const formattedSeconds = String(seconds).padStart(2, '0');
-
-    // Return the formatted string
-    return `${formattedMinutes}:${formattedSeconds}`;
-  }
-
-  // Update the duration label when metadata is loaded
-  durationLabel.innerHTML = formatDuration(audio.duration);
-
+// connect volume slider to audio volume
+volumeSlider.addEventListener("input", () => {
+  audio.volume = volumeSlider.value;
 });
 
 // Initially load song info
@@ -51,9 +38,26 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   Title.innerText = song;
   Artist.innerText = Artists[artistIndex];
-  audio.src = `../src/music/${song}.mp3`;
+  audio.src = `/src/assets/music/${song}.mp3`;
   cover.style.backgroundImage = covers[songIndex];
 }
+
+audio.addEventListener("loadedmetadata", () => {
+  function formatDuration(duration) {
+    // Calculate minutes and seconds
+    const minutes = Math.floor(duration / 60);
+    const seconds = Math.floor(duration % 60);
+
+    // Pad single-digit minutes and seconds with a leading zero
+    const formattedMinutes = String(minutes).padStart(2, "0");
+    const formattedSeconds = String(seconds).padStart(2, "0");
+
+    // Return the formatted string
+    return `${formattedMinutes}:${formattedSeconds}`;
+  }
+
+  durationLabel.innerHTML = formatDuration(audio.duration);
+});
 
 function playSong() {
   playIcon.classList.add("hidden");
@@ -103,17 +107,19 @@ function nextSong() {
   playSong();
 }
 
+// update progress bar & time
+
 function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
   const progressPercent = (currentTime / duration) * 100;
   progressBar.style.width = `${progressPercent}%`;
-  
+
   const minutes = Math.floor(audio.currentTime / 60);
   const seconds = Math.floor(audio.currentTime % 60);
 
   // Pad single-digit minutes and seconds with a leading zero
-  const formattedMinutes = String(minutes).padStart(2, '0');
-  const formattedSeconds = String(seconds).padStart(2, '0');
+  const formattedMinutes = String(minutes).padStart(2, "0");
+  const formattedSeconds = String(seconds).padStart(2, "0");
 
   currentTimeLabel.innerHTML = `${formattedMinutes}:${formattedSeconds}`;
 }
@@ -126,7 +132,8 @@ function setProgress(e) {
   audio.currentTime = (clickX / width) * duration;
 }
 
-// Event listeners
+// song play/pause events
+
 playBtn.addEventListener("click", () => {
   if (isPlaying) {
     pauseSong();
@@ -135,7 +142,8 @@ playBtn.addEventListener("click", () => {
   }
 });
 
-// Change song events
+// change song events
+
 previousBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
 audio.addEventListener("timeupdate", updateProgress);
