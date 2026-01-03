@@ -17,9 +17,9 @@ const volumeSlider = document.getElementById("volume-slider");
 const songs = ["gettin-my-mom-on", "what-do-they-know", "winter-remix"];
 const Artists = ["Jack Stauber", "Mindless Self Indulgence", "Vivaldi"];
 const covers = [
-  "url(../src/assets/HiLo-cover.jpg)",
-  "url(../src/assets/Mindless-Self-Indulgence.jpg)",
-  "url(../src/assets/violin.jpg)",
+  "url(./assets/HiLo-cover.jpg)",
+  "url(./assets/Mindless-Self-Indulgence.jpg)",
+  "url(./assets/violin.jpg)",
 ];
 const duration = audio.duration;
 let isPlaying = false;
@@ -38,7 +38,7 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   Title.innerText = song.split("-").join(" ");
   Artist.innerText = Artists[artistIndex];
-  audio.src = `../src/assets/music/${song}.mp3`;
+  audio.src = `./assets/music/${song}.mp3`;
   cover.style.backgroundImage = covers[songIndex];
 }
 
