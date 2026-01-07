@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/music-favicon.svg"
+      type="image/svg+xml"
+    />
     <title>Music Player</title>
     <link rel="stylesheet" href="output.css" />
   </head>
@@ -47,15 +52,15 @@
           </div>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <div class="flex flex-col xl:flex-col-reverse 2xl:w-[84%]">
-            <div class="2xl:w-full">
+          <div class="flex flex-grow flex-col xl:flex-col-reverse 2xl:w-[84%]">
+            <div class="flex w-full max-w-full">
               <!-- progress-bar width is updated by JS to reflect playback position. -->
               <div
-                class="mt-7 h-[.35rem] w-full cursor-pointer rounded-md bg-gray-500 transition-colors duration-150 md:ml-0 md:h-2 md:w-full xl:mt-1 xl:w-full 2xl:h-[.65rem] 2xl:w-full"
+                class="mt-7 flex h-[.35rem] w-full flex-grow cursor-pointer rounded-md bg-gray-500 md:ml-0 md:mt-5 md:h-2 md:w-full xl:mt-1 xl:w-full 2xl:h-[.65rem] 2xl:w-full"
                 id="progress-container"
               >
                 <div
-                  class="flex h-full w-[0.3%] items-center justify-end rounded-md bg-white"
+                  class="h-full w-0 items-center justify-end rounded-md bg-white"
                   id="progress-bar"
                 ></div>
               </div>
