@@ -26,20 +26,6 @@ nav ul {
   outline: none;
 }
 
-@media (min-width: 1536px) {
-  .volume-slider {
-    height: 12px;
-  }
-
-  .volume-slider::-webkit-slider-runnable-track {
-    height: 12px;
-  }
-
-  .volume-slider::-moz-range-progress {
-    height: 12px;
-  }
-}
-
 /* Chrome / Safari */
 .volume-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -55,6 +41,7 @@ nav ul {
 }
 
 .volume-slider::-webkit-slider-runnable-track {
+  width: 100%;
   height: 7px;
   background: #878787; /* gray-400 */
   border-radius: 9999px;
@@ -62,7 +49,15 @@ nav ul {
 }
 
 /* Firefox */
+.volume-slider::-moz-range-track {
+  width: 100%;
+  height: 7px;
+  background: #2f2f2f; /* gray-500 - matches slider background */
+  border-radius: 9999px;
+}
+
 .volume-slider::-moz-range-progress {
+  width: 100%;
   height: 7px;
   background: #878787; /* gray-400 */
   border-radius: 9999px;
@@ -80,4 +75,34 @@ nav ul {
 .volume-slider::-moz-range-thumb:hover {
   opacity: 1;
   background: #acabab; /* lighter gray on hover */
+}
+
+@media (min-width: 1536px) {
+  .volume-slider {
+    height: 12px;
+  }
+
+  .volume-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+  }
+
+  .volume-slider::-moz-range-progress {
+    height: 12px;
+  }
+
+  .volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+  }
+
+  .volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+  }
+
+  .volume-slider::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
 }
